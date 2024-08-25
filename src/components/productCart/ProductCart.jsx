@@ -7,9 +7,10 @@ import { decrementCart, deleteAllCart } from "../../context/slices/cartSlice";
 import { removeFromCart, incrementCart } from "../../context/slices/cartSlice";
 import { toggleHeart } from "../../context/slices/wishlistSlice";
 import { SlLocationPin } from "react-icons/sl";
+import { useNavigate } from "react-router-dom";
 import { AiFillCar } from "react-icons/ai";
 import "./ProductCart.scss";
-import { useNavigate } from "react-router-dom";
+import "number-brm";
 
 const ProductCart = () => {
   const cart = useSelector((state) => state?.cart?.value);
@@ -30,7 +31,7 @@ const ProductCart = () => {
         </div>
       </td>
       <td>
-        <p className="cart__price">{el.price} сум</p>
+        <p className="cart__price">{el.price.brm()} сум</p>
       </td>
       <td>
         <div className="cart__btns">
@@ -53,7 +54,7 @@ const ProductCart = () => {
       </td>
       <td>
         <div className="cart__prices">
-          <p className="cart__price">{el.price * el.quantity} сум</p>
+          <p className="cart__price">{(el.price * el.quantity).brm()} сум</p>
           <button onClick={() => dispatch(removeFromCart(el.id))}>
             <AiOutlineDelete />
           </button>
@@ -86,7 +87,7 @@ const ProductCart = () => {
               <tbody>{carts}</tbody>
             </table>
             <div className="cart__total__wrapper">
-              <h1 className="cart__total">Итого: {total} сум</h1>
+              <h1 className="cart__total">Итого: {total.brm()} сум</h1>
             </div>
             <div className="cart__shop__btns">
               <button onClick={() => navigate("/dekor")} className="cart__shop">
