@@ -1,0 +1,14 @@
+.heart {
+  margin-bottom: 50px;
+  &-title {
+    color: #22262a;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 52.5px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &-btn {
+    color: red !important;
+  }
+}

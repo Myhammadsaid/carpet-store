@@ -1,0 +1,35 @@
+.advertising {
+  margin-bottom: 120px;
+  &-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 257px;
+    .advertising-card {
+      max-width: 197px;
+      & img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        margin-bottom: 53px;
+      }
+      .advertising-text {
+        color: #22262a;
+        font-size: 27px;
+        font-weight: 500;
+        line-height: 40.5px;
+        text-align: center;
+        margin-bottom: 11px;
+      }
+      .advertising-par {
+        color: #22262a;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.92px;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,183 @@
+.cart {
+  margin-bottom: 90px;
+  &-title {
+    margin-bottom: 46px !important;
+  }
+  &-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    .remove-btn {
+      width: 100px;
+      padding: 0 5px;
+      height: 30px;
+      font-size: 16px;
+      background: #33a0ff;
+      border-radius: 7px;
+      color: #ffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .cart-item {
+      color: #22262a;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 30px;
+    }
+  }
+  &-cards {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 30px;
+    margin-bottom: 90px;
+    .cart-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 10px;
+      .cart-btn-delete {
+        width: 23.62px;
+        height: 22px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #ff687538;
+        color: #ff4252;
+      }
+      .cart-img {
+        width: 137.85px;
+        height: 94px;
+        object-fit: contain;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 7px;
+      }
+      .cart-text {
+        color: #262626;
+        max-width: 197px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+      }
+      .cart-price {
+        color: #262626;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+      }
+      .single-route-btns {
+        width: 123.28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &-inc,
+        &-dec,
+        &-count {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 48.91px;
+          background: #f6f7f8;
+          flex: 1;
+        }
+        &-inc,
+        &-dec {
+          font-size: 24px;
+          color: #33a0ff;
+        }
+        &-count {
+          color: #262626;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 19.49px;
+        }
+        &-dec:disabled {
+          cursor: no-drop;
+        }
+      }
+    }
+  }
+  .total-style {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .form-vaucher {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 369px;
+      .input-vaucher {
+        width: 250px;
+        height: 58px;
+        text-indent: 20px;
+      }
+      .vaucher-btn {
+        width: 118px;
+        height: 58px;
+        background: #33a0ff;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+      }
+    }
+    .total-content {
+      width: 377.1px;
+      .total-items {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 24px;
+        .total-item {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          color: #262626;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 27px;
+        }
+        .total-item-title {
+          color: #22262a;
+          font-size: 30px;
+          font-weight: 500;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          line-height: 45px;
+        }
+        .cart-btn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto;
+          border-radius: 6px;
+          width: 100%;
+          height: 40px;
+          background: #33a0ff;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 27px;
+          color: #ffff;
+        }
+      }
+    }
+  }
+  .payment {
+    width: 800px;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    left: 0;
+    background: #ffffff;
+    z-index: 10;
+  }
+}

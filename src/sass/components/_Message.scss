@@ -1,0 +1,95 @@
+.massega {
+  margin-bottom: 100px;
+  &-title {
+    text-align: center;
+    padding: 14.5px;
+    background: #f6f7f8;
+    color: #262626;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.92px;
+    margin-bottom: 140px;
+    & span {
+      color: #33a0ff;
+    }
+  }
+  &-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 126px;
+    .massega-content1 {
+      max-width: 646px;
+      background: #40bfff;
+      height: 715px;
+      padding: 123px 86px 0;
+      &-text {
+        color: #ffffff;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 56.35px;
+        margin-bottom: 56px;
+      }
+      &-box {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 36px;
+      }
+      &-email,
+      &-phone,
+      &-comment {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18.78px;
+        max-width: 200px;
+      }
+    }
+    .massega-content2 {
+      .massega-form {
+        display: grid;
+        grid-template-columns: auto;
+        width: 510px;
+        gap: 21px;
+        .massega-inputs {
+          display: grid;
+          grid-template-columns: auto;
+          gap: 7px;
+          &-text {
+            color: #373737;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 16.44px;
+          }
+          .massega-input {
+            width: 100%;
+            text-indent: 12px;
+            height: 50px;
+          }
+          .massega-textarea {
+            width: 100%;
+            height: 200px;
+            padding: 20px;
+            resize: none;
+            outline: none;
+          }
+        }
+        .massega-btn {
+          width: 100%;
+          height: 50px;
+          border-radius: 10px;
+          background: #33a0ff;
+          box-shadow: 0px 10px 40px 0px #f8a17033;
+          color: #ffffff;
+          font-size: 24px;
+          font-weight: 800;
+          line-height: 32.74px;
+          letter-spacing: -0.02em;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

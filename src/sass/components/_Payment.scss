@@ -1,0 +1,96 @@
+.payment-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #000006;
+  opacity: 30%;
+  z-index: 10;
+}
+
+.payment-wrapper {
+  width: 800px;
+  background: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 11;
+  padding: 30px;
+  .payment-title {
+    color: #40bfff;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 37.57px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .payment-form {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    .payment-inputs {
+      display: flex;
+      justify-content: space-between;
+      gap: 60px;
+      margin-bottom: 32px;
+      .payment-input {
+        flex: 1;
+        height: 50px;
+        text-indent: 14px;
+        resize: none;
+        outline: none;
+        background: #dfdede;
+        opacity: 30%;
+        border: none;
+        border-radius: 8px;
+      }
+      & textarea {
+        padding-top: 15px;
+        height: 122px;
+      }
+      .payment-text {
+        color: #40bfff;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 23.48px;
+        margin-bottom: 14px;
+      }
+      .payment-checkbox {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        & span {
+          display: flex;
+          align-items: center;
+          margin-bottom: 19px;
+          gap: 13px;
+          .payment-par {
+            color: #223263;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 18px;
+            letter-spacing: 0.5px;
+          }
+        }
+      }
+    }
+    .payment-btn {
+      width: 338px;
+      height: 60px;
+      background: #33a0ff;
+      border-radius: 10px;
+      color: #ffffff;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      font-weight: 800;
+      line-height: 32.74px;
+      letter-spacing: -0.02em;
+      box-shadow: 0px 10px 40px 0px #f8a17033;
+    }
+  }
+}

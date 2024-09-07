@@ -1,0 +1,19 @@
+.hero {
+	padding-top: 258px;
+	padding-bottom: 166px;
+	&-style {
+		display: flex;
+		align-items: center;
+		justify-content: start;
+		&-content {
+			max-width: 573px;
+			&-text {
+				color: #ffffff;
+				font-size: 64px;
+				font-weight: 700;
+				line-height: 96px;
+				letter-spacing: 0.5px;
+			}
+		}
+	}
+}

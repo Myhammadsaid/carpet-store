@@ -1,0 +1,149 @@
+@media (max-width: 1115px) {
+	body {
+		margin-top: 57px !important;
+	}
+	.header-top {
+		&-nav {
+			justify-content: center !important;
+			&-item1 {
+				display: none !important;
+			}
+		}
+	}
+	.header-bottom {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 10;
+		background: #fff;
+		padding: 10px !important;
+		&-nav {
+			justify-content: center !important;
+		}
+		&-nav-titles {
+			display: none !important;
+		}
+		&-nav-links {
+			display: flex;
+			justify-content: space-between !important;
+			gap: 20px !important;
+			&-link {
+				font-size: 16px !important;
+				line-height: normal !important;
+			}
+		}
+	}
+	.advertising-cards {
+		gap: 80px !important;
+	}
+	.feature-cards {
+		overflow: auto;
+	}
+}
+
+@media (max-width: 950px) {
+	.payment-title {
+		margin-bottom: 20px !important;
+	}
+	.payment-wrapper {
+		width: 550px !important;
+	}
+	.payment-form {
+		max-width: 500px !important;
+	}
+	.payment-inputs {
+		gap: 10px !important;
+		margin-bottom: 10px !important;
+	}
+	.payment-btn {
+		width: 160px !important;
+		font-size: 16px !important;
+		height: 40px !important;
+	}
+}
+
+@media (max-width: 740px) {
+	.payment-inputs {
+		& textarea {
+			height: 50px !important;
+		}
+	}
+	.payment-text {
+		font-size: 14px !important;
+		line-height: normal !important;
+	}
+	.payment-wrapper {
+		width: 380px !important;
+		padding: 15px !important;
+		border-radius: 10px;
+	}
+
+	.hero-style-content-text {
+		font-size: 50px !important;
+	}
+	.product-box-cards {
+		gap: 10px !important;
+		&-card {
+			padding: 10px 15px !important;
+		}
+	}
+
+	.product-information-style-items {
+		gap: 20px !important;
+	}
+
+	.product-items {
+		gap: 30px !important;
+	}
+	.content-box-btn {
+		font-size: 16px !important;
+	}
+	.content-box-text {
+		line-height: normal !important;
+		font-size: 28px !important;
+	}
+	.content-box-par {
+		line-height: normal !important;
+		font-size: 16px !important;
+	}
+	.content-style {
+		& img {
+			width: 100% !important;
+		}
+	}
+	.brand-card {
+		gap: 15px !important;
+	}
+}
+
+@media (max-width: 560px) {
+	.massega-form,
+	.register-form-inputs {
+		width: 360px !important;
+	}
+	.single-route-box {
+		gap: 8px !important;
+	}
+	.header-top-nav-item2 {
+		gap: 25px !important;
+	}
+	.product-information-style-items-item {
+		font-size: 14px !important;
+	}
+	.single-route-content {
+		max-width: 380px !important;
+	}
+	.cart-item {
+		font-size: 14px !important;
+	}
+	.product-items {
+		gap: 10px !important;
+	}
+}
+
+.hero {
+	background-image: url(./assets/hero-img.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}

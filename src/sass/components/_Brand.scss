@@ -1,0 +1,46 @@
+.brand {
+  margin-bottom: 100px;
+  &-title {
+    color: #22262a;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 51px;
+    text-align: center;
+    margin-bottom: 71px;
+  }
+  &-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    .brand-card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 35px;
+      .brand-content {
+        max-width: 197px;
+        &-date {
+          color: #c1c8ce;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 27px;
+        }
+        &-text {
+          color: #22262a;
+          font-size: 22px;
+          font-weight: 600;
+          line-height: 33px;
+        }
+        &-par {
+          color: #22262a;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 21.92px;
+        }
+      }
+    }
+  }
+}

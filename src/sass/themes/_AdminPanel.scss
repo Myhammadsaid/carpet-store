@@ -1,0 +1,30 @@
+.admin-panel {
+  margin-bottom: 100px;
+  &-text {
+    color: #000000;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 60px;
+    letter-spacing: -0.02em;
+    margin-bottom: 41px;
+  }
+  &-par {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28.8px;
+    letter-spacing: 0.5px;
+    margin-bottom: 26px;
+  }
+  &-btn {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background: #33a0ff;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 32.74px;
+    letter-spacing: -0.02em;
+  }
+}

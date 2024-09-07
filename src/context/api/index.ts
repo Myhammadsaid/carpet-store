@@ -1,7 +1,7 @@
 import { createApi, fetchBaseQuery, retry } from '@reduxjs/toolkit/query/react'
 
 const baseQuery = fetchBaseQuery({
-	baseUrl: 'https://66361b32415f4e1a5e2648a4.mockapi.io/api',
+	baseUrl: 'https://fakestoreapi.com',
 	prepareHeaders: headers => {
 		const token: string | null = localStorage.getItem('x-auth-token')
 		if (token) {

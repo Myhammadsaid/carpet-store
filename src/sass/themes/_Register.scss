@@ -1,0 +1,40 @@
+.register {
+  margin-bottom: 100px;
+  &-form {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 27px;
+    &-inputs {
+      width: 510px;
+      &-text {
+        color: #373737;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16.44px;
+        margin-bottom: 7px;
+      }
+      .register-form-input {
+        width: 100%;
+        height: 50px;
+        text-indent: 12px;
+        border: 1px solid #33a0ff;
+      }
+    }
+    &-btn {
+      width: 100%;
+      height: 50px;
+      border-radius: 10px;
+      background: #33a0ff;
+      box-shadow: 0px 10px 40px 0px #f8a17033;
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 32.74px;
+      letter-spacing: -0.02em;
+      text-align: center;
+    }
+  }
+}

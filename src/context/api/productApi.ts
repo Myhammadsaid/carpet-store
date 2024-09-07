@@ -3,9 +3,10 @@ import { api } from './index'
 export const productApi = api.injectEndpoints({
 	endpoints: build => ({
 		getProducts: build.query({
-			query: params => ({
-				url: '/products',
-				params,
+			query: query => ({
+				url: `/products${query.path}`,
+				method: 'GET',
+				params: query.params,
 			}),
 			providesTags: ['Product'],
 		}),
@@ -14,7 +15,18 @@ export const productApi = api.injectEndpoints({
 				url: `/products/${id}`,
 			}),
 		}),
+		getCategoryPtoduct: build.query({
+			query: params => ({
+				url: '/products/categories',
+				method: 'GET',
+				params,
+			}),
+		}),
 	}),
 })
 
-export const { useGetProductsQuery, useGetDetailProductQuery } = productApi
+export const {
+	useGetProductsQuery,
+	useGetDetailProductQuery,
+	useGetCategoryPtoductQuery,
+} = productApi
